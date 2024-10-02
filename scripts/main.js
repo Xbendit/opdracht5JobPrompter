@@ -132,7 +132,8 @@ if (userInput === "marketing") {
 } else if (userInput === "customer-service") {
     console.log(userInput + " is een leuke afdeling om te werken. Er werken op dit moment " + departments['customer-service'].numberOfEmployees + " medewerkers. ");
 } else {
-    console.error("Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.");
+    /*console.error("Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.");*/
+    document.getElementById('error-message').textContent = "Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.";
 }
 
 /*/!*Opdracht 4b*!/*/
@@ -161,7 +162,8 @@ if (userInput === "marketing") {
     } else if (userInput2 === "3") {
         console.log("Je koos " + departments.marketing.jobs[3].title + ". Een uitdagende rol! " + departments.marketing.jobs[3].description);
     } else {
-        console.error("Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.");
+        /*console.error("Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.");*/
+        document.getElementById('error-message').textContent = "Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.";
     }
 
 } else if (userInput === "sales") {
@@ -189,7 +191,8 @@ if (userInput === "marketing") {
     } else if (userInput2 === "3") {
         console.log("Je koos " + departments.sales.jobs[3].title + ". Een uitdagende rol! " + departments.sales.jobs[3].description);
     } else {
-        console.error("Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.");
+        /*console.error("Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.");*/
+        document.getElementById('error-message').textContent = "Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.";
     }
 
 } else if (userInput === "customer-service") {
@@ -217,11 +220,9 @@ if (userInput === "marketing") {
     } else if (userInput2 === "3") {
         console.log("Je koos " + departments['customer-service'].jobs[3].title + ". Een uitdagende rol! " + departments['customer-service'].jobs[3].description);
     } else {
-        /*document.getElementById('error-message').textContent = "Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.";*/
-        console.error("Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.");
+        /*console.error("Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.");*/
+        document.getElementById('error-message').textContent = "Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.";
     }
-} else {
-    console.error("Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.");
 }
 
-document.getElementById('error-message').textContent = "Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.";
+
