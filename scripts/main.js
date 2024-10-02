@@ -73,6 +73,7 @@ const departments = {
 
 console.log(departments);
 
+
 /*Opdracht 1*/
 
 console.log("De afdeling Sales heeft " + departments.sales.numberOfEmployees + " medewerkers.");
@@ -138,7 +139,7 @@ if (userInput === "marketing") {
 if (userInput === "marketing") {
 
     const userInput2 = prompt(
-        'Je koos '+[userInput] +'. Over welke functie wil je meer weten? Voer een getal tussen 0 en 3 in.\n' +
+        'Je koos ' + [userInput] + '. Over welke functie wil je meer weten? Voer een getal tussen 0 en 3 in.\n' +
         '0: ' + departments.marketing.jobs[0].title + ',\n' +
         '1: ' + departments.marketing.jobs[1].title + ',\n' +
         '2: ' + departments.marketing.jobs[2].title + ',\n' +
@@ -166,7 +167,7 @@ if (userInput === "marketing") {
 } else if (userInput === "sales") {
 
     const userInput2 = prompt(
-        'Je koos '+[userInput] +'. Over welke functie wil je meer weten? Voer een getal tussen 0 en 3 in.\n' +
+        'Je koos ' + [userInput] + '. Over welke functie wil je meer weten? Voer een getal tussen 0 en 3 in.\n' +
         '0: ' + departments.sales.jobs[0].title + ',\n' +
         '1: ' + departments.sales.jobs[1].title + ',\n' +
         '2: ' + departments.sales.jobs[2].title + ',\n' +
@@ -194,7 +195,7 @@ if (userInput === "marketing") {
 } else if (userInput === "customer-service") {
 
     const userInput2 = prompt(
-        'Je koos '+[userInput] +'. Over welke functie wil je meer weten? Voer een getal tussen 0 en 3 in.\n' +
+        'Je koos ' + [userInput] + '. Over welke functie wil je meer weten? Voer een getal tussen 0 en 3 in.\n' +
         '0: ' + departments["customer-service"].jobs[0].title + ',\n' +
         '1: ' + departments["customer-service"].jobs[1].title + ',\n' +
         '2: ' + departments["customer-service"].jobs[2].title + ',\n' +
@@ -216,10 +217,11 @@ if (userInput === "marketing") {
     } else if (userInput2 === "3") {
         console.log("Je koos " + departments['customer-service'].jobs[3].title + ". Een uitdagende rol! " + departments['customer-service'].jobs[3].description);
     } else {
+        /*document.getElementById('error-message').textContent = "Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.";*/
         console.error("Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.");
     }
 } else {
     console.error("Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.");
-
 }
 
+document.getElementById('error-message').textContent = "Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.";
